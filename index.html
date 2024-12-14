@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading">Digital Clock</div>
+    <div class="sq"></div>
+    <div class="container">
+        <div class="hours"></div>
+        <div class="col">:</div>
+        <div class="minutes"></div>
+        <div class="col">:</div>
+        <div class="seconds"></div>
+    </div>
+    <div class="circle"></div>
+    <script>
+        window.onload=()=>{
+            let d = new Date();
+            document.querySelector(".hours").innerText = d.getHours()
+            document.querySelector(".minutes").innerText = d.getMinutes()
+            document.querySelector(".seconds").innerText = d.getSeconds()
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
