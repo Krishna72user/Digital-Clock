@@ -12,9 +12,6 @@ body{
     flex-direction: column;
     align-items: center;
     background: linear-gradient(to right ,rgb(19, 4, 41),rgb(27, 13, 117));
-    position: relative;
-    /* background: linear-gradient(135deg, #4facfe, #00f2fe); Background for testing */
-
 }
 .hours,.minutes,.seconds,.col{
     font-size: 2.3em;
@@ -31,71 +28,63 @@ body{
     background: rgba(191, 159, 159, 0.1);
     border-radius: 10px;
 }
-.sq{
+.heading{
     position: absolute;
-    top: 35vh;
-    left: 35vw;
-    z-index: -1;
+    top: 20vh;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: yellow;
+}
+.b{
+    font-size:0.8em ;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sq{  
     height: 5em;
     border-radius: 10px;
     width: 5em;
     background-color: rgb(241, 59, 89);
 }
-.circle{
-    position: absolute;
-    z-index: -1;
-    top:37vh;
-    left: 56vw;
-    margin: 3em;
+.circle{   
     height: 6em;
+    position: absolute;
     border-radius: 50%;
+    bottom: 0;
+    right: 0;
     width: 6em;
     background-color: rgb(58, 181, 229);
 }
-.heading{
-   position: absolute;
-   top: 20vh;
-   font-size: 2.2em;
-   font-weight: bold;
-   color: yellow;
-}
-@media only screen and (max-width:768px){
-    .sq{
-        height: 4.7em;
-        width: 4.7em;
-        top:34vh;
-        left: 11vw;
-    }
-    .circle{
-        height: 5.4em;
-        width: 5.4em;
-        top: 39vh;
-        left: 60vh;
-    }
-}
-@media only screen  and (max-width:455px){
-    .container{
-        width: 75vw;
-        height: 5em;
-    }
-    .sq{
-        height: 4.4em;
-        width: 4.4em;
-        top:37.4vh;
-        left: 8.4vw;
-    }
-    .circle{
-        height: 5em;
-        width: 5em;
-        top: 39vh;
-        left: 30vh;
-    }
-    .b{
-        font-size:2.3vw ;
-    }
-}
-.box{
+.cs{
+    z-index: -1;
+    position: absolute;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 10em;
+    width: 30em;
 }
+@media only screen and (max-width:455px){
+    .container{
+        width: 77vw;
+        height: 6em;
+        }
+        .cs{
+            width: 89vw;
+            height: 9em;
+        }
+        .sq{
+            height: 4.4em;
+            width: 4.4em;
+        }
+        .circle{
+            height: 5em;
+            width: 5em;
+        }
+        .b{
+            font-size:0.5em ;
+        }
+    }
